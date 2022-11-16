@@ -1,0 +1,310 @@
+.main-header{
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background-color: white;
+  z-index: 1000;
+}
+.left-side{
+  height: 50px;
+  display: flex;
+  align-items: center;
+  width: 250px;
+}
+.middle{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+}
+.right-side{
+  display: flex;
+  align-items: center;
+}
+.hamburger-menu{
+  height: 29px;
+}
+.youtube-logo{
+  margin-top: 5px;
+  height: 21px;
+}
+.hamburger-button{
+  margin: 7px 21px 0 21px;
+  border-radius: 30px;
+  padding: 3px 3px 1px 5px;
+  border: none;
+  background-color: white;
+  transition: background-color 0.15s;
+}
+.hamburger-button:hover{
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.hamburger-button:active{
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.search-box{
+  flex: 1;
+  padding: 10px 20px 10px 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(206, 206, 206);
+  margin-right: -2px;
+  box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.05);
+  width: 0; /*search box has a default width, making it zero removes the default width*/
+}
+.search-box::placeholder{
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: gray;
+}
+.search-box:focus{
+  border: 1px solid rgb(68, 68, 213);
+  outline: none;
+}
+.search-icon{
+  height: 19px;
+}
+.search-button{
+  padding: 7px 20px 7px 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(206, 206, 206);
+  background-color: rgb(248, 248, 248);
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+.search-button:hover{
+  background-color: rgb(243, 243, 243);
+}
+.search-button:active{
+  background-color: rgb(232, 232, 232);
+}
+.mic-icon{
+  height: 23px;
+}
+.mic-button{
+  padding: 6px 8px;
+  border-radius: 20px;
+  border: none;
+  margin-left: 8px;
+  background-color: rgb(248, 248, 248);
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+.mic-button:hover{
+  background-color: rgb(224, 224, 224);
+}
+.mic-button:active{
+  background-color: rgb(209, 208, 208);
+}
+.create-button{
+  padding: 6px 8px;
+  border-radius: 20px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  margin-left: 70px;
+  transition: background-color 0.15s;
+}
+.create-button:hover{
+  background-color: rgb(231, 231, 231);
+}
+.create-button:active{
+  background-color: rgb(212, 212, 212);
+}
+.create-icon{
+  height: 23px;
+}
+.notifications-button{
+  padding: 8px 10px;
+  border-radius: 20px;
+  border: none;
+  background-color: white;
+  margin-left: 20px;
+  transition: background-color 0.15s;
+  cursor: pointer;
+}
+.notifications-button:hover{
+  background-color: rgb(231, 231, 231);
+}
+.notifications-button:active{
+  background-color: rgb(212, 212, 212);
+}
+.notifications-icon{
+  height: 19px;
+}
+.user{
+  height: 30px;
+  margin-left: 25px;
+  margin-right: 30px;
+  cursor: pointer;
+}
+.recommendations{
+  display: flex;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  right: 0;
+  height: 45px;
+  background-color: white;
+  padding-bottom: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  z-index: 999;
+}
+.recommendations-button{
+  padding: 8px 12px;
+  border: none;
+  margin-left: 13px;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background-color 0.15s;
+  cursor: pointer;
+  margin-top: 13px;
+}
+.recommendations-button:hover{
+  background-color: rgb(226, 226, 226);
+}
+.recommendations-button-all{
+  padding: 8px 12px;
+  border: none;
+  margin-left: 13px;
+  border-radius: 5px;
+  font-size: 14px;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  margin-left: 110px;
+  margin-top: 13px;
+}
+.sidebar{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 60px;
+  width: 75px;
+  align-items: center;
+  background-color: white;
+  z-index: 1000;
+}
+.home-icon{
+  height: 18px;
+  width: 17px;
+  margin-top: 12px;
+  margin-bottom: 10px;
+}
+.shorts-icon{
+  width: 23px;
+  margin-left: 3px;
+  margin-top: 12px;
+  margin-bottom: 10px;
+}
+.subscriptions-icon{
+  width: 23px;
+  margin-top: 12px;
+  margin-bottom: 10px;
+}
+.library-icon{
+  width: 23px;
+  margin-left: 2px;
+  margin-top: 12px;
+  margin-bottom: 10px;
+}
+.side-bar-text{
+  font-size: 10px;
+  margin-bottom: 12px;
+}
+.home, .subscription, .shorts, .library{
+  width: 60px;
+  margin-left: -4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+  border-radius: 8px;
+  transition: background-color 0.15s;
+  cursor: pointer;
+}
+.home:hover, .shorts:hover, .subscription:hover, .library:hover{
+  background-color: rgb(241, 241, 241);
+}
+.search-button-container{
+  position: relative;
+}
+.tooltip{
+  position: absolute;
+  font-size: 12px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 8px 6px;
+  border-radius: 3px;
+  bottom: -50px;
+  white-space: nowrap;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1s ;
+}
+.tooltip-voice{
+  position: absolute;
+  font-size: 12px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 8px 6px;
+  border-radius: 3px;
+  bottom: -50px;
+  white-space: nowrap;
+  right: -35px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1s ;
+}
+.search-button-container:hover .tooltip{
+  visibility: visible;
+  opacity: 1;
+}
+.mic-button-container{
+  position: relative;
+}
+.mic-button-container:hover .tooltip-voice{
+  visibility: visible;
+  opacity: 1;
+}
+.create-button-container{
+  position: relative;
+}
+.notification-button-container{
+  position: relative;
+}
+.tooltip-create{
+  position: absolute;
+  font-size: 12px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 8px 6px;
+  border-radius: 3px;
+  bottom: -50px;
+  left: 65px;
+  white-space: nowrap;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1s ;
+}
+.create-button-container:hover .tooltip-create{
+  visibility: visible;
+  opacity: 1;
+}
+.notification-button-container:hover .tooltip{
+  visibility: visible;
+  opacity: 1;
+}

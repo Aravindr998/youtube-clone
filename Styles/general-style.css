@@ -1,0 +1,13 @@
+body{
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  padding-left: 110px;
+  padding-top: 143px;
+  padding-right: 15px;
+}
+button{
+  padding: 0;
+}
+p{
+  margin: 0;
+}
